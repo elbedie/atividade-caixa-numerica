@@ -1,12 +1,66 @@
-# React + Vite
+# Caixa Numérica com React e Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação simples em React utilizando Vite, que apresenta uma grade de botões numerados de 0 a 8. Ao clicar, o número é substituído por "X".
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+caixa-numerica/
+│
+├── public/              # Arquivos estáticos
+│
+├── src/                 # Código-fonte
+│   ├── App.jsx          # Componente principal
+│   ├── App.css          # Estilos do componente
+│   └── main.jsx         # Ponto de entrada
+│
+├── index.html           # HTML principal
+├── package.json         # Configuração do projeto
+└── vite.config.js       # Configuração do Vite
+```
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (versão LTS)
+- npm ou Yarn
+
+## Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd caixa-numerica
+   ```
+
+2. Instale as dependências:
+
+   Com npm:
+
+   ```bash
+   npm install
+   ```
+
+   Ou com Yarn:
+
+   ```bash
+   yarn
+   ```
+
+## Execução
+
+Para iniciar o servidor de desenvolvimento:
+
+Com npm:
+
+```bash
+npm run dev
+```
+
+Com Yarn:
+
+```bash
+yarn dev
+```
+
+Acesse `http://localhost:5173`.
